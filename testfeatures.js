@@ -1,14 +1,7 @@
-//My first test mocha case
-
-// Add
-// Subtraction
-// Multiply
-// Division
-
 var assert = require('assert');
 
 describe('Math Operation Test Suite', function() {
-    it('Addition of two numbers', function(){
+    it.only('Addition of two numbers', function(){
         var a = 10;
         var b = 10;
 
@@ -26,7 +19,7 @@ describe('Math Operation Test Suite', function() {
         assert.equal(c, 0)
     });
 
-    it('Multiply of two numbers', function() {
+    it.skip('Multiply of two numbers', function() {
         var a = 10;
         var b = 10;
 
@@ -43,5 +36,7 @@ describe('Math Operation Test Suite', function() {
 
         assert.equal(c, 1)
     });
+
+    it('This is a pending test')
 });
 
